@@ -1,0 +1,45 @@
+{
+    "name": "psc-acme/connector-payment",
+    "description": "Package connector-payment for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ConnectorPayment\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "guzzlehttp/guzzle": "^7.0",
+        "symfony/yaml": "^7.0",
+        "psr/container": "^2.0",
+        "predis/predis": "^2.0",
+        "nette/utils": "^4.0",
+        "carbon/carbon": "^3.0",
+        "psc-acme/formatter-user": "^1.0",
+        "psc-acme/manager-user": "^1.0",
+        "psc-acme/importer-user": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
